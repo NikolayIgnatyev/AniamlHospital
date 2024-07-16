@@ -1,0 +1,179 @@
+@import "./fonts.css";
+
+*,
+*::after
+*::before{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	color: #818494;
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+
+input{
+	outline: none;
+}
+
+button{
+	outline: none;
+}
+
+.page{
+	position: relative;
+}
+
+.header{
+	background-color: white;
+	border-radius: 0px 0px 50px 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	max-width: 1648px;
+	width: 100%;
+	padding: 0 24px;
+}
+
+.site{
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.header-menu{
+	display:  flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+
+.nav-menu{
+	display:  flex;
+	align-items: center;
+	padding-left: 40px;
+	font-weight: 400; 
+	font-size: 17px;
+	line-height: 145%;
+}
+
+.nav-menu__items{
+	display:  flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.nav-menu__item{
+	padding-right: 24px;
+}
+
+.phone{
+	display:  flex;
+	align-items: center;
+	padding-left: 8px;
+	padding-right: 40px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 145%;
+	color: black;
+	margin-right: auto;
+}
+
+.btn{
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 40px;
+	color: #06BAB5;
+	background-color: white;
+	border: 1px solid #06BAB5;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 100%;
+	text-align: center;
+	min-height: 50px;
+	padding: 10px 12px;
+}
+
+.hero{
+	background-color: #DDE5E5;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__title{
+	background-color: white;
+	border-radius: 50px;
+	width: 603px;
+}
+
+.hero__title-text{
+	font-size: 60px;
+	padding-left: 30px;
+	padding-top: 65px;
+	font-weight: 400;
+	font-size: 60px;
+	color: #111;
+}
+
+.hero-place{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.hero-text{
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 140%;
+	color: #818494;
+	padding-left: 30px;
+	padding-top: 45px;
+}
+
+.btn-fill{
+	display: flex;
+	align-items: center;
+	background-color: #06BAB5;
+	color: white;
+	margin-left: 30px;
+	margin-top: 65px;
+	margin-bottom: 30px;
+}
+
+.btn-text{
+	margin-right: 110px;
+}
+
+.foto{
+	position: absolute;
+	right: 220px;
+	bottom: 0;
+	height: 100%;
+}
+
+.peopls{
+	object-fit: contain;
+	height: 100%;
+	object-position: bottom right;
+}

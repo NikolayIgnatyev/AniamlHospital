@@ -7,11 +7,61 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  test text
-
-
-  <script src="js/main.js"></script>
+  <div class="page">
+    <header class="header">
+      <div class="container">
+        <div class="header-menu">
+          <img class="logo" src="../files/logo.svg" alt="Логотип" height="59" width="162">
+          <nav class="nav-menu">
+            <ul class="nav-menu__items">
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">О компании</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Наши услуги</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Расписание</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Специалисты</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#" class="nav-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+7 495 270-50-20" class="phone">+7 495 270-50-20</a>
+          <button class="btn">Заказать звонок</button>
+          <button class="btn">Запись на приём</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-place">
+            <div class="hero__title">
+              <h1 class="hero__title-text">Cкидка 10%<br> на комплексную диагностику</h1>
+              <p class="hero-text">КИТ отмечает свой одиннадцатый<br> день рождения и дарит вам, скидку 10% на все услуги</p>
+              <button class="btn btn-fill">
+                <p class="btn-text">Подробнее</p>
+                <img src="../files/right.svg" alt="Стрелочка" width="28" height="12">
+              </button>
+            </div>
+            <div class="foto">
+              <picture>
+                <source srcset="../images/heroPeople.webp">
+                <img class="peopls" src="../images/heroPeople.png" alt="Люди с собакой" width="980" height="770">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
