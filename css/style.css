@@ -402,7 +402,7 @@ button {
 .card__foto img {
 	max-width: 100%;
 	max-height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	position: absolute;
 	bottom: 0;
 }
@@ -435,12 +435,14 @@ button {
 
 .speacilist-card__schedule {
 	z-index: 21;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 	position: absolute;
 	background-color: #06BAB5;
 	width: 100%;
 	height: 100%;
 	padding: 30px;
-	display: none;
 	transition: 0.15s;
 }
 
@@ -507,9 +509,25 @@ button {
 	border: 2px solid #06BAB5;
 }
 
+.btn-record{
+	margin-top: 20px;
+	border-radius: 100px;
+	padding: 20px 30px;
+	width: 170px;
+	height: 50px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	color: #797d8d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 .specialists-card__item:hover .speacilist-card__schedule{
-	display: block;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
 }
 
 .specialists-card__item:hover {
@@ -527,4 +545,157 @@ button {
 
 .specialists-card__item:hover .btn-specialist svg path{
 	stroke: white;
+}
+
+.recommendations{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.recommendations__container{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.recommendations__container_title{
+	margin-top: 100px;
+	margin-bottom: 35px;
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 110%;
+	letter-spacing: 0.01em;
+	text-align: center;
+	color: #111;
+}
+
+.recommendations-menu{
+	margin-top: 100px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	gap: 0 10px;
+}
+
+.btn-menu{
+	border: 2px solid #b0b4c7;
+	border-radius: 40px;
+	width: 141px;
+	height: 48px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 140%;
+	text-align: center;
+	color: #b0b4c7;
+	background-color: white;
+}
+
+.btn-menu:hover{
+	background-color: #06bab5;
+	border: none;
+	color: white;
+}
+
+.btn-menu:hover svg path{
+	stroke: white;
+}
+
+.btn-nav{
+	border: 2px solid #b0b4c7;
+	border-radius: 40px;
+	width: 68px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.15s;
+}
+
+.btn-nav svg path{
+	stroke: #b0b4c7;;
+}
+
+.recommendations__cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0px 60px;
+}
+
+.recommendations__cards-item{
+	display: grid;
+	grid-template-columns: 100px 640px; 
+	grid-template-rows: 100px 250px;
+	overflow: hidden;
+}
+
+.recommendations__cards-item_foto{
+	padding: 20px;
+	border-radius: 200px;
+}
+
+.recommendations__cards-item_foto img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.recommendations__cards-item_title{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.autor-rec{
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 140%;
+	color: #06bab5;
+}
+
+.date-create-rec{
+	border: 1px solid #b3b9cf;
+	border-radius: 40px;
+	width: 116px;
+	height: 26px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.date-create-rec data{
+	text-wrap: nowrap;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	color: #b0b4c7;
+}
+
+.recommendations__cards-item_text{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	color: #000;
+	border: 1px dashed #9da3bb;
+	border-radius: 0 35px 35px 35px;
+	max-width: 682px;
+	max-height: 256px;
+	padding: 26px;
+	position: relative;
+}
+
+.all-rec-link{
+	position: absolute;
+	bottom: 28px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	color: #b0b4c7;
 }
