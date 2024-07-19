@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,13 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
+
 <body>
   <div class="page">
     <header class="header">
       <div class="container">
         <div class="header-menu">
-          <img class="logo" src="../files/logo.svg" alt="Логотип" height="59" width="162">
+          <img class="logo" src="./files/logo.svg" alt="Логотип" height="59" width="162">
           <nav class="nav-menu">
             <ul class="nav-menu__items">
               <li class="nav-menu__item">
@@ -35,8 +37,8 @@
             </ul>
           </nav>
           <a href="tel:+7 495 270-50-20" class="phone">+7 495 270-50-20</a>
-          <button class="btn">Заказать звонок</button>
-          <button class="btn">Запись на приём</button>
+          <button class="btn btn-header">Заказать звонок</button>
+          <button class="btn btn-header">Запись на приём</button>
         </div>
       </div>
     </header>
@@ -46,16 +48,17 @@
           <div class="hero-place">
             <div class="hero__title">
               <h1 class="hero__title-text">Cкидка 10%<br> на комплексную диагностику</h1>
-              <p class="hero-text">КИТ отмечает свой одиннадцатый<br> день рождения и дарит вам, скидку 10% на все услуги</p>
-              <button class="btn btn-fill">
+              <p class="hero-text">КИТ отмечает свой одиннадцатый<br> день рождения и дарит вам, скидку 10% на все
+                услуги</p>
+              <button class="btn btn-hero">
                 <p class="btn-text">Подробнее</p>
-                <img src="../files/right.svg" alt="Стрелочка" width="28" height="12">
+                <img src="./files/right.svg" alt="Стрелочка" width="28" height="12">
               </button>
             </div>
             <div class="foto">
               <picture>
-                <source srcset="../images/heroPeople.webp">
-                <img class="peopls" src="../images/heroPeople.png" alt="Люди с собакой" width="980" height="770">
+                <source srcset="./images/heroPeople.webp">
+                <img class="peopls" src="./images/heroPeople.png" alt="Люди с собакой" width="980" height="770">
               </picture>
             </div>
           </div>
@@ -65,67 +68,605 @@
         <div class="container">
           <div class="services__container">
             <h1 class="services__title">Наши услуги</h1>
-          <div class="services__cards">
-            <div class="services__card-item">
-              <h3 class="card-title">Терапия</h3>
-              <div class="card-number">
-                <p class="card-number__text">1</p>
+            <div class="services__cards">
+              <div class="services__card-item">
+                <h3 class="card-title">Терапия</h3>
+                <div class="card-number">
+                  <p class="card-number__text">1</p>
+                  <p class="card-number__text_hover">Записаться</p>
+                </div>
+                <svg class="foto-card" viewBox="0 0 208 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.8921 203.208C3.52157 197.347 1.48655 185.811 7.34674 177.439L45.6249 122.103C51.4863 113.732 63.0233 111.697 71.3938 117.559L74.3842 119.653C82.7547 125.514 84.7897 137.05 78.9295 145.42L40.6514 200.757C34.79 209.127 23.2542 211.161 14.8825 205.301L11.8921 203.208Z"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path
+                    d="M27.6445 148.021C27.6445 148.021 28.4515 155.204 40.342 163.335C52.2325 171.468 59.4147 171.468 61.1253 171.468"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path
+                    d="M167.988 170.545C167.988 170.545 169.438 140.809 138.551 140.809C107.664 140.809 110.906 171.995 112.143 175.324C113.379 178.652 121.784 192.773 130.488 195.46C130.488 195.46 117.859 197.295 117.262 203.267C116.665 209.24 130.189 208.643 130.189 208.643H166.195C166.195 208.643 185.991 204.462 194.992 189.444C203.993 174.427 203.993 156.124 203.694 146.526C203.395 136.927 196.504 114.87 180.933 99.555C175.407 93.2328 166.99 100.222 172.224 105.646C172.224 105.646 187.729 123.478 188.489 141.219C189.249 158.96 181.497 170.517 181.497 170.517C181.497 170.517 181.642 141.744 166.138 124.718C150.633 107.691 135.319 97.7033 125.476 79.7258C115.631 61.7496 111.303 55.4721 111.494 48.1004C111.683 40.7287 112.589 18.6125 97.2737 9.1491C81.9598 -0.315496 65.3141 4.77507 57.5624 12.3361C49.8096 19.8984 45.4356 27.5065 45.4356 27.5065L19.8971 37.3053C19.8971 37.3053 17.6606 47.7204 25.0323 57.5638C32.4039 67.4084 61.1307 66.6472 61.1307 66.6472V103.933"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path
+                    d="M80.8119 208.561C93.7212 208.561 104.186 198.096 104.186 185.187C104.186 172.278 93.7212 161.812 80.8119 161.812C67.9026 161.812 57.4375 172.278 57.4375 185.187C57.4375 198.096 67.9026 208.561 80.8119 208.561Z"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                </svg>
               </div>
-              <img src="../images/dog-and-pills.svg" alt="Собака с таблетками" class="foto-card" width="208" height="213">
-            </div>
-            <div class="services__card-item">
-              <h3 class="card-title">Хирургия</h3>
-              <div class="card-number">
-                <p class="card-number__text">2</p>
+              <div class="services__card-item">
+                <h3 class="card-title">Хирургия</h3>
+                <div class="card-number">
+                  <p class="card-number__text">2</p>
+                  <p class="card-number__text_hover">Записаться</p>
+                </div>
+                <svg class="foto-card" viewBox="0 0 219 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M168.34 94.8347V0" stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M141.672 19.3911L154.913 19.3932V33.055C154.913 33.055 154.913 45.7223 144.016 45.7223H143.684H143.352C132.454 45.7223 132.454 33.055 132.454 33.055V19.3932H134.666L141.672 19.3911Z"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path d="M144.044 57.2448V46.1265" stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path d="M144.044 19.7518V6.91553H167.61" stroke="#06BAB5" stroke-width="7"
+                    stroke-miterlimit="3.8637" />
+                  <path
+                    d="M215.436 122.489H89.2251L9.54866 86.5499C3.78667 82.6637 2.26597 74.8418 6.15316 69.0798C8.88898 65.0236 13.2447 62.9667 17.7895 63.5212L99.2932 97.3201H215.436"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" stroke-linecap="round" />
+                  <path
+                    d="M24.0195 66.0428C24.0195 66.0428 30.4108 52.9647 41.4391 53.6881C52.4673 54.4115 58.6725 60.6167 60.8427 64.9572C63.014 69.2986 63.2547 81.7737 63.2547 81.7737"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path d="M98.8079 97.4238L94.3652 122.413" stroke="#06BAB5" stroke-width="7"
+                    stroke-miterlimit="3.8637" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.39064 130.316C4.39064 126.095 7.81347 122.672 12.0356 122.672H192.113C196.335 122.672 199.758 126.095 199.758 130.316V132.941C199.758 137.163 196.335 140.585 192.113 140.585H12.0345C7.81242 140.585 4.38965 137.163 4.38965 132.941L4.39064 130.316Z"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path
+                    d="M40.0116 207.632C44.8914 207.632 48.8473 203.676 48.8473 198.797C48.8473 193.917 44.8914 189.961 40.0116 189.961C35.1317 189.961 31.1758 193.917 31.1758 198.797C31.1758 203.676 35.1317 207.632 40.0116 207.632Z"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path
+                    d="M174.502 207.63C179.381 207.63 183.336 203.675 183.336 198.796C183.336 193.916 179.381 189.961 174.502 189.961C169.622 189.961 165.667 193.916 165.667 198.796C165.667 203.675 169.622 207.63 174.502 207.63Z"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path d="M40.3726 189.644V177.636" stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path d="M48.225 140.369L36.7061 178.097H44.8093L74.6796 140.613" stroke="#06BAB5" stroke-width="7"
+                    stroke-miterlimit="3.8637" />
+                  <path d="M174.113 189.664V177.656" stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path d="M166.741 142.091L177.744 178.123H169.641L141.044 142.976" stroke="#06BAB5" stroke-width="7"
+                    stroke-miterlimit="3.8637" />
+                  <path
+                    d="M167.247 141.968L178.448 178.654L174.611 178.653V189.667H173.6V178.653L169.421 178.654L140.673 143.319L141.458 142.681L169.903 177.641H177.082L166.279 142.264L167.247 141.968Z"
+                    stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                  <path d="M61.2305 158.017H152.947" stroke="#06BAB5" stroke-width="7" stroke-miterlimit="3.8637" />
+                </svg>
+
               </div>
-              <img src="../images/couch.svg" alt="Кушетка" class="foto-card">
-            </div>
-            <div class="services__card-item">
-              <h3 class="card-title">Кардиология</h3>
-              <div class="card-number">
-                <p class="card-number__text">3</p>
+              <div class="services__card-item">
+                <h3 class="card-title">Кардиология</h3>
+                <div class="card-number">
+                  <p class="card-number__text">3</p>
+                  <p class="card-number__text_hover">Записаться</p>
+                </div>
+                <svg class="foto-card" viewBox="0 0 231 217" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M135.918 143.406C143.559 132.547 144.307 123.285 141.951 111.467C138.791 95.6098 128.124 83.1152 107.611 81.7842C83.2599 80.2045 73.6377 106.135 73.6377 106.135C73.6377 106.135 63.8749 80.2045 39.5237 81.7842C19.0113 83.1152 8.34393 95.611 5.18343 111.467C1.85078 128.19 4.73226 139.796 24.5684 158.053C47.2117 178.891 75.2185 200.433 73.7232 212.228C72.813 205.048 82.6647 194.257 95.7173 182.211"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M103.32 163.591C110.956 163.591 117.147 157.401 117.147 149.764C117.147 142.128 110.956 135.938 103.32 135.938C95.6838 135.938 89.4933 142.128 89.4933 149.764C89.4933 157.401 95.6838 163.591 103.32 163.591Z"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M77.2761 149.794C77.2761 135.393 88.9495 123.72 103.35 123.72" stroke="#06BAB5"
+                    stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M122.573 167.792C122.573 167.792 132.76 180.425 152.838 179.71C174.928 178.923 184.921 157.165 184.921 144.016C184.921 130.866 184.921 79.3162 184.921 79.3162"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M215.192 15.1215L211.053 13.1053C211.053 13.1053 208.053 11.8316 209.872 7.25347C211.69 2.67642 217.542 3.85668 220.407 5.23722C221.663 5.84142 223.083 6.7539 224.283 7.74965C225.824 9.02668 226.977 10.4173 227.002 15.7932C227.002 19.4477 227.002 23.9595 227.002 23.9595C227.002 23.9595 226.683 41.5003 222.212 51.6119C217.707 61.7977 210.309 79.5816 185.098 79.5816"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M154.351 15.1215L158.492 13.1053C158.492 13.1053 161.492 11.8316 159.673 7.25347C157.855 2.67642 152.003 3.85668 149.138 5.23722C147.882 5.84142 146.462 6.7539 145.262 7.74965C143.721 9.02668 142.568 10.4173 142.543 15.7932C142.543 19.4477 142.543 23.9595 142.543 23.9595C142.543 23.9595 142.862 41.5003 147.334 51.6119C151.838 61.7977 159.237 79.5816 184.448 79.5816"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
               </div>
-              <img src="../images/cardio.svg" alt="Кардио" class="foto-card">
-            </div>
-            <div class="services__card-item">
-              <h3 class="card-title">Анестезиология</h3>
-              <div class="card-number">
-                <p class="card-number__text">4</p>
+              <div class="services__card-item">
+                <h3 class="card-title">Анестезиология</h3>
+                <div class="card-number">
+                  <p class="card-number__text">4</p>
+                  <p class="card-number__text_hover">Записаться</p>
+                </div>
+                <svg class="foto-card" viewBox="0 0 123 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M60.1655 127.757C60.1655 122.553 64.3847 118.333 69.5904 118.333H109.348C114.553 118.333 118.772 122.552 118.772 127.757V197.565C118.772 202.77 114.553 206.989 109.348 206.989H69.5904C64.3847 206.989 60.1655 202.77 60.1655 197.565V127.757Z"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path
+                    d="M89.4808 181.39C99.8244 181.39 108.21 173.005 108.21 162.661C108.21 152.317 99.8244 143.932 89.4808 143.932C79.1371 143.932 70.752 152.317 70.752 162.661C70.752 173.005 79.1371 181.39 89.4808 181.39Z"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path d="M82.1714 162.654H96.7831" stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637"
+                    stroke-linecap="round" />
+                  <path d="M89.4736 169.963V155.352" stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637"
+                    stroke-linecap="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.0921 4.16457C18.4531 4.16457 21.9893 7.69978 21.9893 12.0618V109.42C21.9893 113.781 18.4541 117.316 14.0921 117.316H11.8962C7.53517 117.316 4 113.781 4 109.42V12.0608C4 7.69977 7.53517 4.16357 11.8962 4.16357H14.0921V4.16457Z"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path
+                    d="M23.0811 105.007C23.0811 105.007 47.1117 105.664 58.2546 86.954C67.5843 71.2895 67.3167 52.4496 59.2232 38.1075C51.1297 23.7655 34.5383 14.3555 23.7711 15.673"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M81.5586 53.4238C81.5586 51.6889 82.9654 50.2822 84.7003 50.2822H94.9628C96.6977 50.2822 98.1045 51.6879 98.1045 53.4238V69.701C98.1045 71.4359 96.6977 72.8426 94.9628 72.8426H84.7003C82.9654 72.8426 81.5586 71.4359 81.5586 69.701V53.4238Z"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path d="M94.9546 73.0801V106.882" stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path d="M84.6543 73.0801V106.882" stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path
+                    d="M76.0693 118.356V110.194C76.0693 108.459 77.4761 107.052 79.211 107.052H100.239C101.974 107.052 103.38 108.459 103.38 110.194L103.45 118.356"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path
+                    d="M98.0372 55.5835H110.695C114.165 55.5835 116.978 58.396 116.978 61.8668C116.978 65.4367 114.165 68.2492 110.695 68.2492H97.9688"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path d="M70.8745 57.7901L81.7201 57.7891" stroke="#06BAB5" stroke-width="8"
+                    stroke-miterlimit="3.8637" />
+                  <path
+                    d="M64.2046 52.749H67.6713C69.4062 52.749 70.813 54.1547 70.813 55.8896V68.9429C70.813 70.6778 69.4062 72.0845 67.6713 72.0845H64.1353"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" />
+                  <path d="M70.8745 66.2852L81.7201 66.2842" stroke="#06BAB5" stroke-width="8"
+                    stroke-miterlimit="3.8637" />
+                </svg>
+
               </div>
-              <img src="../images/anesthetic.svg" alt="Анестетик" class="foto-card">
-            </div>
-            <div class="services__card-item">
-              <h3 class="card-title">Стоматология</h3>
-              <div class="card-number">
-                <p class="card-number__text">5</p>
+              <div class="services__card-item">
+                <h3 class="card-title">Стоматология</h3>
+                <div class="card-number">
+                  <p class="card-number__text">5</p>
+                  <p class="card-number__text_hover">Записаться</p>
+                </div>
+                <svg class="foto-card" viewBox="0 0 217 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M93.6248 91.0633C93.6248 91.0633 121.502 67.6845 140.186 81.5341C158.87 95.3836 159.136 119.376 154.599 128.184C150.687 135.781 147.478 140.378 146.64 141.56C147.853 147.848 149.932 166.142 137.736 182.916C118.593 209.246 115.518 186.578 112.849 175.932C110.304 165.778 106.44 155.584 95.2509 154.558C83.9119 155.483 80.0829 165.719 77.5222 175.932C74.8531 186.578 71.7782 209.245 52.6352 182.916C37.5861 162.217 44.2188 139.395 44.2188 139.395C44.2188 139.395 28.2341 111.635 38.6135 94.3166C48.9928 76.9979 66.8456 76.9968 79.1233 80.733C91.401 84.4702 100.875 100.005 100.875 100.005"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M138.956 116.071L127.517 121.102L122.485 132.542L117.455 121.102L106.016 116.071L117.455 111.041L122.485 99.6016L127.517 111.041L138.956 116.071Z"
+                    stroke="#06BAB5" stroke-width="5.6693" stroke-miterlimit="3.8637" stroke-linecap="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M37.2105 63.1839L27.0669 67.645L22.6047 77.7897L18.1436 67.645L8 63.1839L18.1436 58.7228L22.6047 48.5781L27.0669 58.7228L37.2105 63.1839Z"
+                    stroke="#06BAB5" stroke-width="5.6693" stroke-miterlimit="3.8637" />
+                  <path d="M181.311 71.3884L170.182 82.403" stroke="#06BAB5" stroke-width="5.6693"
+                    stroke-miterlimit="3.8637" stroke-linecap="round" />
+                  <path d="M133.814 32.8364L140.635 39.6027" stroke="#06BAB5" stroke-width="6.8031"
+                    stroke-miterlimit="3.8637" stroke-linecap="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M141.012 40.2146C135.633 46.2392 142.141 54.0954 142.141 54.0954L181.277 93.2107C183.489 94.9735 185.641 96.2376 188.79 94.1265L194.572 88.2427C196.652 84.7203 195.251 81.1009 193.85 79.3111L156.984 42.5082C156.984 42.5082 146.656 33.8926 141.012 40.2146Z"
+                    stroke="#06BAB5" stroke-width="6.8031" stroke-miterlimit="3.8637" stroke-linecap="round" />
+                  <path d="M212.969 98.1666C206.839 99.6446 199.541 98.5588 192.045 90.9946" stroke="#06BAB5"
+                    stroke-width="6.8031" stroke-miterlimit="3.8637" stroke-linecap="round" />
+                  <path
+                    d="M105 19.2959L110.502 17.4883C110.502 17.4883 116.054 15.7162 119.012 18.2674C120.725 19.7444 123.457 22.4574 125.454 24.4798"
+                    stroke="#06BAB5" stroke-width="6.8031" stroke-miterlimit="3.8637" stroke-linecap="round" />
+                  <path
+                    d="M126.824 15.0326C120.102 23.335 117.492 32.3647 120.995 35.201C124.498 38.0373 132.787 33.6062 139.51 25.3038C146.232 17.0014 148.842 7.97171 145.339 5.13541C141.836 2.2991 133.547 6.73023 126.824 15.0326Z"
+                    stroke="#06BAB5" stroke-width="6.8031" stroke-miterlimit="3.8637" stroke-linecap="round" />
+                </svg>
+
               </div>
-              <img src="../images/tooth.svg" alt="Зуб" class="foto-card">
-            </div>
-            <div class="services__card-item">
-              <h3 class="card-title">Офтальмология</h3>
-              <div class="card-number">
-                <p class="card-number__text">6</p>
+              <div class="services__card-item">
+                <h3 class="card-title">Офтальмология</h3>
+                <div class="card-number">
+                  <p class="card-number__text">6</p>
+                  <p class="card-number__text_hover">Записаться</p>
+                </div>
+                <svg class="foto-card foto-card__dog" viewBox="0 0 173 192" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M127.737 35.7984C133.797 39.5014 139.099 44.7073 144.523 51.6193C148.624 56.8473 152.768 62.6363 156.572 69.0533L156.873 68.9543C164.455 60.8133 159.687 48.1223 157.957 38.3823C156.163 28.2843 157.034 18.7343 158.785 8.71333C144.421 11.7163 135.259 23.9574 127.737 35.7984ZM85.622 77.9283C91.069 77.9283 95.997 80.1373 99.561 83.7083C101.9 86.0513 103.653 88.9804 104.58 92.2554C104.956 93.6914 104.684 94.8193 104.069 95.6653C104.035 96.1273 104.018 96.5933 104.018 97.0633C104.018 107.507 112.484 115.973 122.928 115.973C133.372 115.973 141.838 107.507 141.838 97.0633C141.838 86.6193 133.372 78.1533 122.928 78.1533C114.109 78.1533 106.699 84.1904 104.608 92.3584C103.653 88.9794 101.9 86.0513 99.561 83.7083C104.2 75.6103 112.926 70.1533 122.928 70.1533C130.266 70.1533 136.918 73.0903 141.773 77.8533L149.676 73.1044C146.095 67.0684 142.168 61.5773 138.229 56.5563C125.521 40.3583 114.549 34.9053 86.806 36.9234H86.226C58.471 34.9044 47.331 40.3653 34.629 56.5563C30.667 61.6063 26.717 67.1333 23.119 73.2103L30.047 77.3743C34.853 72.8953 41.301 70.1543 48.39 70.1543C58.372 70.1543 67.084 75.5894 71.729 83.6604C75.29 80.1184 80.199 77.9283 85.622 77.9283ZM66.663 92.2554C64.534 84.1224 57.159 78.1543 48.39 78.1543C37.946 78.1543 29.48 86.6203 29.48 97.0643C29.48 107.508 37.946 115.974 48.39 115.974C58.834 115.974 67.3 107.508 67.3 97.0643C67.3 96.6313 67.285 96.2013 67.257 95.7743C66.567 94.8963 66.257 93.6914 66.663 92.2554ZM91.866 126.822C88.842 126.242 85.653 126.384 85.653 126.384C85.653 126.384 82.471 126.243 79.453 126.822C78.305 127.042 76.271 127.456 75.555 128.563C75.406 132.584 79.308 137.515 85.653 138.418C92.006 137.507 95.885 132.425 95.736 128.411C95.191 127.57 92.635 126.969 91.866 126.822ZM73.125 178.751C74.634 181.295 78.419 183.832 84.413 183.832C91.153 183.832 95.101 180.624 96.159 177.805L95.863 177.482C93.438 174.806 89.144 167.983 85.467 167.847C83.222 167.931 77.7 173.982 73.125 178.751ZM64.377 176.371C65.7082 175.26 67.127 173.8 68.457 172.324C73.337 166.909 78.064 160.388 84.793 159.876C84.94 159.855 85.089 159.843 85.24 159.843L85.465 159.845L85.689 159.843C85.838 159.843 85.986 159.854 86.132 159.875C93.293 160.416 98.004 167.743 103.148 173.279C103.34 173.444 103.517 173.629 103.673 173.836C104.888 175.106 106.133 176.26 107.444 177.189C124.527 189.286 146.046 162.025 114.162 144.809C109.754 142.429 104.815 140.342 99.919 139.017C97.38 142.022 93.779 144.517 89.547 145.739V149.205C89.547 154.538 81.547 154.538 81.547 149.205V145.685C77.322 144.435 73.76 141.946 71.267 138.958C70.459 139.185 69.122 139.582 67.443 140.163C57.069 143.75 42.133 151.311 40.563 163.458C38.546 179.058 54.254 183.623 63.089 177.366C63.525 177.058 63.953 176.725 64.377 176.371ZM12.186 76.5033C-5.268 61.2433 8.99701 42.3723 7.55701 23.5103C6.77601 13.2863 4.836 4.90434 4.836 4.90434C3.047 -2.82366 15.61 0.858331 18.187 1.55833C33.608 5.75033 43.88 19.3723 52.084 32.3763C61.021 28.8733 71.834 27.8793 86.516 28.9243C101.022 27.8923 111.71 28.8503 120.539 32.2513C121.431 30.8893 122.893 28.7103 124.765 26.1163C134.771 12.2433 145.244 0.525331 163.657 0.00233107C166.573 -0.0806689 168.341 2.06234 167.683 4.90434C167.683 4.90434 165.743 13.2873 164.962 23.5103C163.618 41.1133 177.199 63.1393 160.649 76.4603C167.735 90.4113 172.857 107.038 172.857 126.902C172.857 147.636 158.046 164.56 138.397 168.02C136.787 183.666 119.202 194.944 102.402 183.298C98.919 188.735 91.519 191.832 84.412 191.832C77.753 191.832 70.838 189.113 67.127 184.298C51.245 194.964 33.828 183.295 32.485 167.538C31.659 167.321 30.668 167.034 29.553 166.663C11.764 160.747 0 146.827 0 126.902C0.001 107.059 5.111 90.4453 12.186 76.5033ZM15.821 68.9763C15.959 69.0183 16.099 69.0704 16.239 69.1304C20.056 62.6824 24.217 56.8683 28.335 51.6193C33.666 44.8243 38.904 39.6793 44.863 35.9893C44.013 34.7083 42.781 32.8973 41.266 30.7953C33.578 20.1373 27.259 11.5403 13.734 8.71232C17.566 30.6423 14.764 34.3103 11.403 54.9903C10.585 60.0233 12.425 65.2443 15.821 68.9763ZM25.032 83.6933L19.267 80.2294C12.671 93.2604 8.00101 108.619 8.00101 126.902C8.00101 149.549 25.787 157.227 33.224 159.446C35.873 149.606 45.188 139.394 64.829 132.602C65.893 132.234 66.838 131.931 67.628 131.689C66.24 124.681 70.975 117.926 85.653 118.384C86.485 118.358 89.915 118.301 93.372 118.964C102.129 120.643 104.857 126.141 103.636 131.792C104.353 132.015 105.182 132.284 106.099 132.601C125.948 139.465 135.288 149.937 137.799 159.943C143.483 158.564 164.857 151.727 164.857 126.901C164.857 108.566 160.161 93.1724 153.536 80.1174L146.613 84.2773C148.671 88.0803 149.839 92.4353 149.839 97.0623C149.839 111.924 137.791 123.972 122.929 123.972C108.067 123.972 96.019 111.924 96.019 97.0623C96.019 95.6513 96.127 94.2663 96.337 92.9144C94.523 88.7974 90.404 85.9274 85.623 85.9274C80.889 85.9274 76.805 88.7403 74.964 92.7913C75.186 94.1823 75.301 95.6093 75.301 97.0633C75.301 111.925 63.253 123.973 48.391 123.973C33.529 123.973 21.481 111.925 21.481 97.0633C21.48 92.1973 22.772 87.6323 25.032 83.6933ZM122.928 89.8423C126.917 89.8423 130.15 93.0753 130.15 97.0643C130.15 101.053 126.917 104.287 122.928 104.287C118.94 104.287 115.706 101.054 115.706 97.0643C115.706 93.0753 118.94 89.8423 122.928 89.8423ZM48.39 89.8423C52.379 89.8423 55.612 93.0753 55.612 97.0643C55.612 101.053 52.379 104.287 48.39 104.287C44.402 104.287 41.168 101.054 41.168 97.0643C41.168 93.0753 44.402 89.8423 48.39 89.8423Z"
+                    fill="#06BAB5" />
+                </svg>
+
               </div>
-              <img src="../images/dog.svg" alt="Собака в очках" class="foto-card">
-            </div>
-            <div class="services__card-item">
-              <h3 class="card-title">Лаборатория</h3>
-              <div class="card-number">
-                <p class="card-number__text">7</p>
+              <div class="services__card-item">
+                <h3 class="card-title">Лаборатория</h3>
+                <div class="card-number">
+                  <p class="card-number__text">7</p>
+                  <p class="card-number__text_hover">Записаться</p>
+                </div>
+                <svg class="foto-card" viewBox="0 0 155 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M107.597 98.9042C113.095 98.9042 117.553 94.4467 117.553 88.9482C117.553 83.4496 113.095 78.9922 107.597 78.9922C102.098 78.9922 97.6406 83.4496 97.6406 88.9482C97.6406 94.4467 102.098 98.9042 107.597 98.9042Z"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M106.819 113.162C120.212 113.162 131.068 102.305 131.068 88.9131C131.068 75.5207 120.212 64.6641 106.819 64.6641C93.427 64.6641 82.5703 75.5207 82.5703 88.9131C82.5703 102.305 93.427 113.162 106.819 113.162Z"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M139.214 145.725C145.381 145.725 150.381 140.725 150.381 134.558C150.381 128.39 145.381 123.391 139.214 123.391C133.047 123.391 128.047 128.39 128.047 134.558C128.047 140.725 133.047 145.725 139.214 145.725Z"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M4 166.711H150.376V184.47H4V166.711Z" stroke="#06BAB5" stroke-width="8"
+                    stroke-miterlimit="3.8637" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M55.1 155.477H10.25V166.773H55.1V155.477Z" stroke="#06BAB5" stroke-width="8"
+                    stroke-miterlimit="3.8637" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M121.429 69.0916L127.991 59.5166L70.6932 20.1016L29.1562 81.7416L85.0272 121.474L93.1763 109.678"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M75.4474 114.912L65.0784 129.782L28.3594 104.384L38.7284 89.0391" stroke="#06BAB5"
+                    stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M38.8928 111.734L29.6328 124.323L45.4558 135.485L54.8728 122.579" stroke="#06BAB5"
+                    stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M84.6562 29.8891L99.5 9" stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M112.906 49.0168L127.155 28.2578" stroke="#06BAB5" stroke-width="8"
+                    stroke-miterlimit="3.8637" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M92.2969 4L135.835 34.126" stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M129.849 96.1875C129.849 96.1875 129.307 107.973 133.695 114.284C138.083 120.595 145.874 125.475 145.874 125.475"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M103.539 112.977C103.539 112.977 115.104 115.301 120.167 121.086C125.23 126.87 128.081 135.61 128.081 135.61"
+                    stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M128.047 132.328V166.341" stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M150.375 132.328V166.341" stroke="#06BAB5" stroke-width="8" stroke-miterlimit="3.8637"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
               </div>
-              <img src="../images/microscope.svg" alt="Микроскоп" class="foto-card">
-            </div>
-            <div class="services__card-item all-services">
-              <h3 class="card-title">Все<br> услуги</h3>
-              <button class="btn btn-services" width="68" height="48">
-                <img src="../files/right_green.svg" alt="Стрелочка" width="28" height="12">
-              </button>
+              <div class="services__card-item all-services">
+                <h3 class="card-title">Все<br> услуги</h3>
+                <button class="btn btn-services" width="68" height="48">
+                  <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.5 1L32.5 8L25.5 15" stroke="#06BAB5" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M32 8L1 8" stroke="#06BAB5" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="specialists">
+        <div class="container">
+          <div class="specialists__container">
+            <h1 class="specialists__container_title">Наши специалисты</h1>
+            <div class="specialists-cards">
+              <div class="specialists-card__item">
+                <div class="card__foto">
+                  <img src="./images/doc-1.png" alt="Доктор">
+                </div>
+                <div class="card__place-text">
+                  <h4 class="spec-name">Сергей<br> Константинов</h4>
+                  <p class="spec-prof">Ветеринарный врач</p>
+                </div>
+                <div class="speacilist-card__schedule">
+                  <p class="schedule__tiile">Расписание</p>
+                  <div class="shedule-week">
+                    <div class="day-on-week">
+                      <p class="day">Понедельник</p>
+                      <p class="day">Вторник</p>
+                      <p class="day">Среда</p>
+                      <p class="day">Четверг</p>
+                      <p class="day">Пятница</p>
+                      <p class="day">Суббота</p>
+                      <p class="day">Воскресенье</p>
+                    </div>
+                    <div class="work-time">
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 20:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 23:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specialists-card__item">
+                <div class="card__foto">
+                  <img src="./images/doc-2.png" alt="Доктор">
+                </div>
+                <div class="card__place-text">
+                  <h4 class="spec-name">Ирина<br> Василевская</h4>
+                  <p class="spec-prof">Ветеринарный врач</p>
+                </div>
+                <div class="speacilist-card__schedule">
+                  <p class="schedule__tiile">Расписание</p>
+                  <div class="shedule-week">
+                    <div class="day-on-week">
+                      <p class="day">Понедельник</p>
+                      <p class="day">Вторник</p>
+                      <p class="day">Среда</p>
+                      <p class="day">Четверг</p>
+                      <p class="day">Пятница</p>
+                      <p class="day">Суббота</p>
+                      <p class="day">Воскресенье</p>
+                    </div>
+                    <div class="work-time">
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 20:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 23:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specialists-card__item">
+                <div class="card__foto">
+                  <img src="./images/doc-3.png" alt="Доктор">
+                </div>
+                <div class="card__place-text">
+                  <h4 class="spec-name">Людмила<br> Мамонтова</h4>
+                  <p class="spec-prof">Ветеринарный врач</p>
+                </div>
+                <div class="speacilist-card__schedule">
+                  <p class="schedule__tiile">Расписание</p>
+                  <div class="shedule-week">
+                    <div class="day-on-week">
+                      <p class="day">Понедельник</p>
+                      <p class="day">Вторник</p>
+                      <p class="day">Среда</p>
+                      <p class="day">Четверг</p>
+                      <p class="day">Пятница</p>
+                      <p class="day">Суббота</p>
+                      <p class="day">Воскресенье</p>
+                    </div>
+                    <div class="work-time">
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 20:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 23:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specialists-card__item">
+                <div class="card__foto">
+                  <img src="./images/doc-4.png" alt="Доктор">
+                </div>
+                <div class="card__place-text">
+                  <h4 class="spec-name">Дмитрий<br> Коновалов</h4>
+                  <p class="spec-prof">Ветеринарный врач</p>
+                </div>
+                <div class="speacilist-card__schedule">
+                  <p class="schedule__tiile">Расписание</p>
+                  <div class="shedule-week">
+                    <div class="day-on-week">
+                      <p class="day">Понедельник</p>
+                      <p class="day">Вторник</p>
+                      <p class="day">Среда</p>
+                      <p class="day">Четверг</p>
+                      <p class="day">Пятница</p>
+                      <p class="day">Суббота</p>
+                      <p class="day">Воскресенье</p>
+                    </div>
+                    <div class="work-time">
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 20:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 23:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specialists-card__item">
+                <div class="card__foto">
+                  <img src="./images/doc-5.png" alt="Доктор">
+                </div>
+                <div class="card__place-text">
+                  <h4 class="spec-name">Константин<br> Богусловский</h4>
+                  <p class="spec-prof">Ветеринарный врач</p>
+                </div>
+                <div class="speacilist-card__schedule">
+                  <p class="schedule__tiile">Расписание</p>
+                  <div class="shedule-week">
+                    <div class="day-on-week">
+                      <p class="day">Понедельник</p>
+                      <p class="day">Вторник</p>
+                      <p class="day">Среда</p>
+                      <p class="day">Четверг</p>
+                      <p class="day">Пятница</p>
+                      <p class="day">Суббота</p>
+                      <p class="day">Воскресенье</p>
+                    </div>
+                    <div class="work-time">
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 20:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 23:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specialists-card__item">
+                <div class="card__foto">
+                  <img src="./images/doc-6.png" alt="Доктор">
+                </div>
+                <div class="card__place-text">
+                  <h4 class="spec-name">Игорь<br> Коспарйтес</h4>
+                  <p class="spec-prof">Ветеринарный врач</p>
+                </div>
+                <div class="speacilist-card__schedule">
+                  <p class="schedule__tiile">Расписание</p>
+                  <div class="shedule-week">
+                    <div class="day-on-week">
+                      <p class="day">Понедельник</p>
+                      <p class="day">Вторник</p>
+                      <p class="day">Среда</p>
+                      <p class="day">Четверг</p>
+                      <p class="day">Пятница</p>
+                      <p class="day">Суббота</p>
+                      <p class="day">Воскресенье</p>
+                    </div>
+                    <div class="work-time">
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 20:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 23:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specialists-card__item">
+                <div class="card__foto">
+                  <img src="./images/doc-7.png" alt="Доктор">
+                </div>
+                <div class="card__place-text">
+                  <h4 class="spec-name">Мария<br> Волковская</h4>
+                  <p class="spec-prof">Ветеринарный врач</p>
+                </div>
+                <div class="speacilist-card__schedule">
+                  <p class="schedule__tiile">Расписание</p>
+                  <div class="shedule-week">
+                    <div class="day-on-week">
+                      <p class="day">Понедельник</p>
+                      <p class="day">Вторник</p>
+                      <p class="day">Среда</p>
+                      <p class="day">Четверг</p>
+                      <p class="day">Пятница</p>
+                      <p class="day">Суббота</p>
+                      <p class="day">Воскресенье</p>
+                    </div>
+                    <div class="work-time">
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 20:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">12:00 - 23:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time">09:00 - 14:00</p>
+                      </div>
+                      <div class="place-time">
+                        <p class="time"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specialists-card__item all-specialists">
+                <h3 class="card-title">Все<br> услуги</h3>
+                <button class="btn btn-specialist" width="68" height="48">
+                  <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.5 1L32.5 8L25.5 15" stroke="#06BAB5" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M32 8L1 8" stroke="#06BAB5" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
   </div>
 </body>
+
 </html>
